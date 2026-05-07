@@ -1,0 +1,15 @@
+.env
+api/.env
+.DS_Store
+node_modules/
+api/data/
+api/build/
+client/dist/
+client/dev-dist/
+api/src/public/uploads/
+.vscode/
+hermes.log
+docs/qa/e2e/artifacts/*
+docs/consultations/*.zip
+docs/consultations/hermes-client-performance-fidelity-2026-04-30/
+.symphony/

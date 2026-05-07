@@ -1,0 +1,37 @@
+{
+  "name": "hermes-mission-control",
+  "version": "0.1.7",
+  "description": "A polished local web command center for Hermes agents, chat continuity, missions, Kanban, cron, skills, and plugins.",
+  "private": false,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MartinCampbell1/hermes-mission-control.git"
+  },
+  "homepage": "https://github.com/MartinCampbell1/hermes-mission-control#readme",
+  "bugs": {
+    "url": "https://github.com/MartinCampbell1/hermes-mission-control/issues"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "dev": "node scripts/dev.js",
+    "start": "node scripts/start.js",
+    "stop": "node scripts/stop.js",
+    "qa:browser": "node scripts/qa/hermes-client-browser-smoke.mjs",
+    "qa:ux": "node scripts/qa/hermes-client-ux-deep-sweep.mjs",
+    "qa:video-proof": "node scripts/qa/hermes-client-video-proof.mjs",
+    "qa:streaming-draft": "node scripts/qa/hermes-client-streaming-draft-smoke.mjs",
+    "qa:workspace-launch": "node scripts/qa/hermes-client-workspace-launch-smoke.mjs",
+    "qa:live-continuity": "node scripts/qa/hermes-client-live-continuity-gate.mjs",
+    "qa:live-ux": "node scripts/qa/hermes-client-live-ux-gate.mjs"
+  },
+  "bin": {
+    "hermes-client": "scripts/cli.mjs",
+    "hermes_client": "scripts/cli.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.59.1",
+    "vite-plugin-pwa": "^1.2.0",
+    "workbox-window": "^7.4.0"
+  }
+}
